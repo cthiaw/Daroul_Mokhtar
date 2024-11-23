@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .fixed {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #recu-to-print,
+  #recu-to-print * {
+    visibility: visible;
+  }
+
+  #recu-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .print\\:hidden {
+    display: none;
+  }
+
+  .print\\:shadow-none {
+    box-shadow: none;
+  }
+
+  .print\\:m-0 {
+    margin: 0;
+  }
+}
